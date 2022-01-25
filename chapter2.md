@@ -42,3 +42,54 @@ Docstring: comment at the beginning of a program, stating the author's name and 
 End of line comments start with #
 
 ## Numeric Data Types
+
+Float: for real numbers, from -10^308 to 10^308 with 16 digits of precision
+Ord() and chr() convert characters to ASCII and back, respectively
+
+## Expressions
+
+Arithmetic operators: - negation, ** exponentiation, * multiplication, / division, // quotient, % remainder, + addition, - subtraction
+
+Same rules of precedence apply: exponents, negation, multiplication, division/remainder, addition and subtraction; evaluated from left to right
+
+When both operands are the same type, resulting value is also that type. When operands are different types, resulting value will be the more general type (float is more general than int)
+
+// always produces an int, / produces a float
+
+Mixed-mode arithmetic: calculations involving both int and float. Ints are converted to floats temporarily to perform operations.
+
+Can convert values by using conversion functions:
+int(<number or string>)
+float(<number or string>)
+str(<any value>)
+
+Cannot concatenate a string and a number!
+Convert number to string first
+
+**strongly types language**: interpreter checks all data types before operators are applied
+
+## Functions and Modules
+
+**Function**: chunk of code that can be called to perform a task
+*Parameters*: names that refer to arguments (specific data needed for the task)
+
+Some functions have required arguments, some have optional arguments, some have both
+
+Math module! Built in, unlike C++
+
+Can use help(functionName) to get documentation on functions
+
+Instead of referring to math.pi() or whatever, you can import certain functions:
+from *math* import *pi*
+
+Main module??
+
+Good program format:
+* Comment stating programmer's name and purpose of the program
+* import needed modules
+* initialize (and comment) any important variables
+* prompt the user for input data and save to variables
+* process inputs
+* display results
+
+Can run python programs in terminal: navigate to correct directory, type *python3 program.py*
