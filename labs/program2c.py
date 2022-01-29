@@ -1,5 +1,6 @@
 # Program 3C
 # Katie Devinney
+# Calculates the diameter, circumference, and area of a circle based on user input radius
 
 from math import pi
 
