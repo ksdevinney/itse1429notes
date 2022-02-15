@@ -78,3 +78,22 @@ Logical operators:
 and, or, not
 
 Short circuit evaluation: program can evaluate if a statement should execute or not before the condition is fully evaluated, based on *and* (first statement is false, whole condition is false) and *or* (first part is true, so whole condition is true)
+
+## While lööp
+
+Conditional iteration: repeats as long as a condition remains true
+
+while <condition>:
+    <statements>
+
+Similar to selection (if), but while loops can execute multiple times
+
+Uses a "loop control variable" to test whether to execute the loop or not
+
+Also called an "entry control" loop because the entry condition is tested at the top of the loop
+
+Can create a count-controlled while loop
+
+"while True" can be used with a *break* statement within the loop; accessing the *break* statement will exit the loop, otherwise it will continue
+
+random.randint(x, y) will select a number between x and y (inclusive) (must import random)
