@@ -11,6 +11,3 @@ for words in range(0, len(seperatedSentence)): # loop through the words
     firstLetters += seperatedSentence[words][0] # add first letter to the string
 
 print(firstLetters)
-
-# print(seperatedSentence)
-# print(len(seperatedSentence))
