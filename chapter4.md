@@ -92,3 +92,6 @@ readline() can also read one line at a time.
 
 strip() removes newline character, so that data can be converted to different data types
 
+May need to use relative paths to open files in other directories
+
+import os allows you to use path checking methods
