@@ -54,3 +54,41 @@ Replace each hex digit with its 4-bit binary number
 Binary to hex:
 
 Same as with octal, but groups of 4 instead of 3
+
+## String Methods
+
+Method: like a function, but different syntax: always called with an object
+object.method(arguments)
+
+All data values in python are objects
+
+4.4 for some different examples of methods
+
+## Text Files
+
+Python can output data to a txt file, or take input data from a txt file. All input/output data must br strings.
+
+open() will open files for you
+
+f = open("textfilename.txt", 'w')
+w for output files, r for input files
+If the filename does not exist, one is created. If an existing file is opened for output, the previous contents are erased.
+
+Output is created with the "write" method, which takes in a string argument.
+f.write("string")
+close() should be used once all output is written.
+f.close()
+
+Since write() expects a string argument, use str() to convert any other data types before writing to the file.
+
+read() reads the data from an input file
+text = f.read()
+
+After read() is called, the file must be closed and reopened to read the same data again; using read() without doing this will return an empty string
+
+a for loop can be used to read one line at a time
+
+readline() can also read one line at a time.
+
+strip() removes newline character, so that data can be converted to different data types
+
