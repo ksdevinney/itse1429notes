@@ -5,8 +5,8 @@
 file = open("labs/module4/Lab4B3.txt", 'r')
 
 for line in file:
-    cleanLine = line.strip()
-    name = cleanLine.split(",")
+    cleanLine = line.strip() # get out that newline
+    name = cleanLine.split(",") # split on commas
     lastName = name[0]
     # print(lastName)
     firstName = name[1]
@@ -14,5 +14,3 @@ for line in file:
     initial = name[2]
     # print(initial)
     print(firstName +  initial + " " + lastName)
-
-# print(name)
