@@ -1,6 +1,6 @@
 # Program 4B3
 # Katie Devinney
-# reads strings from a file and prints them in a different order
+# reads names from a file and prints them in a different order
 
 file = open("labs/module4/Lab4B3.txt", 'r')
 

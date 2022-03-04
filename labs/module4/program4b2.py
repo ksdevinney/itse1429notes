@@ -1,6 +1,6 @@
 # Program 4b2
 # Katie Devinney
-# reads an input file
+# reads an input file and manipulates the resulting strings
 
 file = open("labs/module4/Lab4B2.txt", 'r')
 combinedString = ""

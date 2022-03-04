@@ -1,6 +1,6 @@
 # Program 4B1
 # Katie Devinney
-# Reads integers from a file
+# Reads integers from a file, uses file input for calculation
 
 file = open("labs/module4/Lab4B1.txt", 'r') # open file
 
