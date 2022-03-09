@@ -1,6 +1,6 @@
 # Program 5A2
 # Katie Devinney
-# 
+# creates a list of random numbers, then seperates by even and odd
 
 import random
 
