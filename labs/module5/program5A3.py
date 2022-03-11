@@ -2,7 +2,7 @@
 # Katie Devinney
 # Reads a list from file and determines if the numbers are going up or down
 
-inFile = open("labs/module5/Lab5A34.txt", 'r')
+inFile = open("labs/module5/Lab5A31.txt", 'r')
 
 line = inFile.read()
 numbers = line.split()
@@ -16,10 +16,10 @@ descending = False
 ascending = False
 
 for index in range(length - 1):
-    if numbers[index] > numbers[index - 1]:
+    if numbers[index] > numbers[index - 1]: # determine if list is ascending
         ascending = True
         descending = False
-    elif numbers[index] < numbers[index - 1]:
+    elif numbers[index] < numbers[index - 1]: # determine if list is descending
         descending = True
         ascending = False
     else:
