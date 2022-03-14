@@ -45,3 +45,14 @@ Testing to see if two objects are equal: == returns true if one variable is an a
 
 **Tuple**: like a list, but immutable. Uses () instead of brackets
 Best to use for a list whose contents should not change
+
+## Functions
+
+Functions consist of a header and a body
+
+def functionName(parameters):
+    body
+
+Body contains statements that will execute when function is called
+
+Functions can include a docstring (comment) that contains information about what the function does. help(functionName)
