@@ -56,3 +56,44 @@ def functionName(parameters):
 Body contains statements that will execute when function is called
 
 Functions can include a docstring (comment) that contains information about what the function does. help(functionName)
+
+Functions defined with parameters require arguments when called
+
+Returns: upon encountering a return statement, python evaluates the expression in the statement and returns control to the caller of the function. If there is no return statement, control is returned after evaluating the last line of code in the function and *none* is returned.
+
+boolean functions return true or false
+
+### Main Function
+
+Usually expects no arguments and returns no values.
+
+Purpose may be to take inputs, process them by calling other functions, and returning the results.
+
+Function definitions do not need to be in any particular order, as long as main() is called at the end of the script
+
+## Dictionaries
+
+Organize information by association, written as key/value pairs seperated by commas
+
+{}
+
+Keys can be data of any immutable type, normally strings or integers. 
+Values can be any type.
+
+Key/value pairs can be added or replaced using []
+
+dictionary[a key] = a value
+
+Can use [a key] to lookup the associated value, but will raise an exception if that key does not exist
+(you can use *in* to test for an uncertain key: if "job" in info:)
+
+.get method also can test for a key:
+info.get(key, default value)
+
+Remove keys using .pop(key, default value)
+
+To print a list:
+* use a *for* loop to print each pair
+* use list(dictionary.items())
+
+help(dict) for full documentation
