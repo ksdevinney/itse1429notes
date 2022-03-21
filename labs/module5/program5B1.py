@@ -6,7 +6,7 @@ people = {}
 
 file = open("labs/module5/Lab5B1.txt", 'r')
 
-person = []
+person = [] # list for each line
 
 for line in file: # fill the dictionary
     person = line.split()
