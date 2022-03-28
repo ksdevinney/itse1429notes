@@ -17,27 +17,33 @@ def square(length):
 def hexagon(length):
     square = length * length
     area = (3 * math.sqrt(3) * square) / 2
-    print("A hexagon of side length %d will have an area of %d" % (length, area))
+    print("A hexagon of side length %d will have an area of %f" % (length, area))
     return area
 
 # calculate the area of an octagon
 def octagon(length):
     square = length * length
     area = (1 + math.sqrt(2)) * (2 * square)
-    print("An octagon of side length %d will have an area of %d" % (length, area))
+    print("An octagon of side length %d will have an area of %f" % (length, area))
     return area
+# never used the formula for area of a hexagon or octagon before...yikes
 
 def main():
     file = open("labs/module6/lab6A1.txt", 'r')
 
-    shapes = []
-
+    # get the number of sides and length for each line
     for line in file:
         shapes = line.split()
 
+        # first value in the line is the number of sides
         sides = int(shapes[0])
 
+        # second value is side length
         length = int(shapes[1])
+
+        print("%d sides of length %d" % (sides, length))
+
+        # determine which function to use
         if sides == 4:
             square(length)
         elif sides == 6:
