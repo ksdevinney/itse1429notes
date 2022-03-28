@@ -1,3 +1,5 @@
-# Program 6A2
-# Katie Devinney
-#
+"""
+Program 6A2
+Katie Devinney
+ 
+"""
