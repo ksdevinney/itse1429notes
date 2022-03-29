@@ -1,18 +1,18 @@
 """
 Program 6A2
 Katie Devinney
-
+Reads numbers from a file, then sums the digits of each number
 """
 
 def addDigits(x):
-    # length = len(x)
+    length = len(x)
     sum = 0
 
-    for i in range(0, 5):
-        x[i] = int(x[i])
-        sum += x[i]
+    for i in range(length):
+        current = x[i] # get the current number
+        current = int(current) # convert to int for adding
+        sum += current
 
-    # print(sum)
     return sum
 
 def main():
@@ -21,10 +21,10 @@ def main():
     numbers = file.read()
     numbers = numbers.split()
 
-    for i in range(0, len(numbers)):
-        print("The number is %d" % i)
-        addDigits(i)
-        print("The sum of its digits is %d" % i)
+    for i in range(len(numbers)):
+        print("The number is %s" % numbers[i]) # print the number
+        theSum = addDigits(numbers[i]) # call the function, as a variable to print in next step
+        print("The sum of its digits is %d" % theSum)
 
 if __name__ == "__main__":
     main()
