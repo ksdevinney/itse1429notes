@@ -23,3 +23,27 @@ height = 200
 using_IDLE = True
 colormode = 255
 
+You have to create an instance of The Turtle before using it, using a constructor
+
+> from turtle import Turtle
+> t = turtle()
+
+mutator methods: change the internal state
+
+accessor methods: return the value of an attribute
+
+Can change the turtle's pen color using .pencolor() method, with either a color word as an argument or RGB values
+
+## Image Processing
+
+Analog information includes a continuous range of values
+
+images are sampled? into pixels
+
+Raw image file: all sampled information, best looking but largest file size
+Compression schemes, like analyizing adjacent pixels for the same color and saving a location instead of the color
+
+Lossless: no information is lost
+
+Lossy: some information is lost (still looks fine when image is decompressed)
+
