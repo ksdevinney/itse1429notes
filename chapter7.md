@@ -47,3 +47,17 @@ Lossless: no information is lost
 
 Lossy: some information is lost (still looks fine when image is decompressed)
 
+Gif compression scheme: 1. algorithm analyzes image for up to 256 of the most prevalent colors, 2. each sample in the grid is replaced with th ekey of the closest color
+
+For images, (0, 0) is at the upper left corner, (width - 1, height - 1) at the bottom right
+
+*images* module contains image processing algorithms
+Uses the Image class, images must be .gif
+
+Many image processing algorithms use nested loops- the outer loop iterates over one coordinate, the inner loop iterates over the other
+
+Pixel RGB values are stored in a tuple. You can manipulate pixels by getting the values of the tuple and assign new values to a new tuple, then reset the pixel to the new tuple
+
+7.2i: converting to black and white (spoiler: replace each pixel with black or white, depending on what's closer to the color)
+
+7.2j: converting to grayscale (multiply each color value by a luminance weight factor, then add them together and set the sum as each value in RGB)
