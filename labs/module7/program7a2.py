@@ -1,5 +1,5 @@
-# Katie Devinney
 # Program 7A2
+# # Katie Devinney
 # Puts the turtle to work setting pins at the bowling alley
 
 from turtle import Turtle
