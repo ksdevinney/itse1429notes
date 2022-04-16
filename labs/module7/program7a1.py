@@ -15,8 +15,7 @@ def main():
     snap.down()
     square(snap, 300)
 
-    # give it a roof
-    # # pen color?/fill?    
+    # give it a roof    
     snap.up()
     snap.setheading(90)
     snap.forward(300)
@@ -37,14 +36,12 @@ def main():
     square(snap, 50)
 
     # sun
-    # pen color/fill
     snap.up()
     snap.goto(200, 100)
     snap.down()
     drawSun(snap, 8, 50)
 
     # door
-    # pen color/fill
     snap.up()
     snap.goto(-75, -200)
     snap.down()

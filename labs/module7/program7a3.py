@@ -10,21 +10,26 @@ def main():
 
     skippy = Turtle()
 
+    # position the turtle and make a row
+    skippy.goto(startX, startY)
+    line(skippy)
+    # adjust where the next row will start 
+    startX -= 50
+    startY += 50
+
+    # position the turtle and make a row
     skippy.goto(startX, startY)
     line(skippy)
     startX -= 50
     startY += 50
 
+    # position the turtle and make a row
     skippy.goto(startX, startY)
     line(skippy)
     startX -= 50
     startY += 50
 
-    skippy.goto(startX, startY)
-    line(skippy)
-    startX -= 50
-    startY += 50
-
+    # position the turtle and make a row
     skippy.goto(startX, startY)
     line(skippy)
     startX -= 50
@@ -32,9 +37,10 @@ def main():
 
 
 def line(t):
-    t.speed(3)
 
     t.up()
+
+    # loop to draw 4 dots in each row
     for dot in range(4):
         t.dot(20)
         t.setheading(0)
