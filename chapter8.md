@@ -36,3 +36,51 @@ Window attributes:
 
 Components are laid out in a 2-D grid, (0, 0) in upper left
 Components can be resized to span multiple rows or columns
+
+self.addComponentType(arguments)
+
+## 8.4 Command Buttons
+
+Buttons have a state attribute, can be "normal" or "disabled"
+
+command methods (event handlers) 
+
+## 8.5 Input and Output
+
+Text fields = addTextField(text, row, column)
+
+Numeric data = addIntegerField(value) or addFloatField(value, precision)
+
+When an error is made in a GUI-based program, the window stays open and allows user to edit the data
+
+Due to the event-driven structure, a GUI program can detect an input error, raise a pop-up window, and continue to accept data
+
+Use try-except method for anticipated errors:
+try:
+    <statements that might raise an exception>
+except <exception type>:
+    <statements to recover from exception>
+
+## 8.6
+
+Instance variable: used to store data beloinging to an individual object (begins with *self*)
+
+## 8.7
+
+Nested frames
+
+Multi-line text
+
+File dialogs
+
+Prompter boxes
+
+Check buttons
+
+Radio buttons
+
+Keyboard events (**using the enter key**)
+
+Using colors
+
+Using a color chooser
