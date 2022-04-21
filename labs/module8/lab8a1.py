@@ -19,20 +19,23 @@ class MilesConverter(EasyFrame):
 
         # widgets for km
         self.addLabel(text = "Kilometers", row = 2, column = 0)
-        self.outputField = self.addFloatField(value = 0, row = 2, column = 1)
+        self.outputField = self.addFloatField(value = 0, row = 2, column = 1, precision= 2)
 
         # button
         self.addButton(text = "Convert", row = 3, column = 0, command = self.convert)
 
         # need to add enter button functionality
+        self.inputField.bind("<Return>", lambda event: self.convert())
 
     # conversion function
     def convert(self):
         miles = self.inputField.getNumber()
-        km = 1.60934 * miles
-        self.outputField.setNumber(km)
 
-        # try/except
+        if miles < 0:
+            self.messageBox(title = "ERROR", message = "Input must be a positive number")
+        else:
+            km = 1.60934 * miles
+            self.outputField.setNumber(km)
 
 def main():
     MilesConverter().mainloop()
