@@ -1,4 +1,4 @@
-# Program 8A1
+# Lab 8A1
 # Katie Devinney
 # Converts miles to kilometers
 
@@ -31,6 +31,7 @@ class MilesConverter(EasyFrame):
     def convert(self):
         miles = self.inputField.getNumber()
 
+        # not sure if I really need this since it wouldn't raise an exception
         if miles < 0:
             self.messageBox(title = "ERROR", message = "Input must be a positive number")
         else:
