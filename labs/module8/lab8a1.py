@@ -24,7 +24,7 @@ class MilesConverter(EasyFrame):
         # button
         self.addButton(text = "Convert", row = 3, column = 0, command = self.convert)
 
-        # need to add enter button functionality
+        # enter button functionality
         self.inputField.bind("<Return>", lambda event: self.convert())
 
     # conversion function
