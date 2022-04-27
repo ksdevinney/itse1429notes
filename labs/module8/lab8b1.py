@@ -21,6 +21,8 @@ class TempConverter(EasyFrame):
         # button
         self.addButton(text = "Convert", row = 3, column = 0, command = self.convert)
 
+        self.inputField.bind("<Return>", lambda event: self.convert())
+
     def convert(self):
         far = self.inputField.getNumber()
 
