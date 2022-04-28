@@ -6,13 +6,18 @@ from breezypythongui import EasyFrame
 
 class TempConverter(EasyFrame):
     def __init__(self):
-        EasyFrame.__init__(self)
+        EasyFrame.__init__(self, "Temperature Converter")
         self.addLabel(text = "Enter the temperature, in Farenheit", row = 0, column = 0)
-        self.setTitle("Temperature Converter")
 
         # input for F
         self.addLabel(text = "Farenheit", row = 1, column = 0)
         self.inputField = self.addFloatField(value = 0, row = 1, column = 1)
+        
+        # radio buttons
+        # self.unitSelector = self.addRadiobuttonGroup(row = 1, column = 2)
+        # defaultRB = self.unitSelector.addRadiobutton(text = "Farenheit")
+        # self.unitSelector.setSelectedButton(defaultRB)
+        # self.unitSelector.addRadiobutton(text = "Celsius")
 
         # output for C
         self.addLabel(text = "Celsius", row = 2, column = 0)
