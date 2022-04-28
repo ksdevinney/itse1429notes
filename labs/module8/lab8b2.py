@@ -7,7 +7,7 @@ from breezypythongui import EasyFrame
 class GradeCalculator(EasyFrame):
     def __init__(self):
         EasyFrame.__init__(self)
-        self.addLabel(text = "Enter the information below.", row = 0, column = 0)
+        self.addLabel(text = "Enter the total number of questions and missed questions.", row = 0, column = 0)
         self.setTitle("Grade Calculator")
 
         # total questions
@@ -32,9 +32,12 @@ class GradeCalculator(EasyFrame):
 
         missed = self.missedQ.getNumber()
 
-        grade = (total - missed) / total * 100
+        if total > 0 and missed >= 0:
+            grade = (total - missed) / total * 100
 
-        self.finalGrade.setNumber(grade)
+            self.finalGrade.setNumber(grade)
+        else:
+            self.messageBox(title = "ERROR", message = "Input must be a positive number")
     
 def main():
     GradeCalculator().mainloop()
