@@ -1,38 +1,47 @@
 # Lab 8B1
 # Katie Devinney
-# Converts a temperature in farenheit to celsius
+# Converts a temperature in Fahrenheit to celsius
 
 from breezypythongui import EasyFrame
 
 class TempConverter(EasyFrame):
     def __init__(self):
         EasyFrame.__init__(self, "Temperature Converter")
-        self.addLabel(text = "Enter the temperature, in Farenheit", row = 0, column = 0)
+        self.addLabel(text = "Enter the temperature in Fahrenheit, or check the box for Celsius.", row = 0, column = 0)
 
         # input for F
-        self.addLabel(text = "Farenheit", row = 1, column = 0)
+        self.addLabel(text = "Fahrenheit", row = 1, column = 0)
         self.inputField = self.addFloatField(value = 0, row = 1, column = 1)
         
-        # radio buttons
-        # self.unitSelector = self.addRadiobuttonGroup(row = 1, column = 2)
-        # defaultRB = self.unitSelector.addRadiobutton(text = "Farenheit")
-        # self.unitSelector.setSelectedButton(defaultRB)
-        # self.unitSelector.addRadiobutton(text = "Celsius")
-
-        # output for C
-        self.addLabel(text = "Celsius", row = 2, column = 0)
-        self.outputField = self.addFloatField(value = 0, row = 2, column = 1, precision = 1)
+        """
+        I really wanted this to be radio buttons instead, but got an error from the library every time I tried to run it.
+        """
+        self.checkForCels = self.addCheckbutton(text = "Celsius", row = 1, column = 2)
 
         # button
-        self.addButton(text = "Convert", row = 3, column = 0, command = self.convert)
+        self.addButton(text = "Convert", row = 2, column = 0, command = self.convert)
+
+        # output boxes
+        self.addLabel(text = "Celsius", row = 3, column = 0)
+        self.celsOut = self.addFloatField(value = 0, row = 3, column = 1, precision = 1)
+
+        self.addLabel(text = "Fahrenheit", row = 4, column = 0)
+        self.farOut = self.addFloatField(value = 0, row = 4, column = 1, precision = 1)
 
         self.inputField.bind("<Return>", lambda event: self.convert())
 
     def convert(self):
-        far = self.inputField.getNumber()
+        tempIn = self.inputField.getNumber()
 
-        cels = (far - 32) * (5/9)
-        self.outputField.setNumber(cels)
+        if self.checkForCels.isChecked():
+            tempOut = (tempIn * (9/5)) + 32
+            self.farOut.setNumber(tempOut)
+            self.celsOut.setNumber(tempIn)
+            
+        else:
+            tempOut = (tempIn - 32) * (5/9)
+            self.celsOut.setNumber(tempOut)
+            self.farOut.setNumber(tempIn)
 
 def main():
     TempConverter().mainloop()
