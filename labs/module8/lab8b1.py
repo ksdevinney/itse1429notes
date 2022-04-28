@@ -1,6 +1,6 @@
 # Lab 8B1
 # Katie Devinney
-# Converts a temperature in Fahrenheit to celsius
+# Converts a temperature in Fahrenheit to celsius, or vice versa
 
 from breezypythongui import EasyFrame
 
@@ -14,7 +14,9 @@ class TempConverter(EasyFrame):
         self.inputField = self.addFloatField(value = 0, row = 1, column = 1)
         
         """
-        I really wanted this to be radio buttons instead, but got an error from the library every time I tried to run it.
+        I really wanted this to be radio buttons instead, but got an error from breezypythongui every time I tried to run it.
+        There was a possible solution posted online, but I didn't want to mess with the library.
+        A check box seemed to be the only solution...
         """
         self.checkForCels = self.addCheckbutton(text = "Celsius", row = 1, column = 2)
 
