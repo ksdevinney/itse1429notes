@@ -15,7 +15,7 @@ class TempConverter(EasyFrame):
         
         """
         I really wanted this to be radio buttons instead, but got an error from breezypythongui every time I tried to run it.
-        There was a possible solution posted online, but I didn't want to mess with the library.
+        There was a possible solution posted online (changing one line in breezypythongui), but I didn't want to mess with the library.
         A check box seemed to be the only solution...
         """
         self.checkForCels = self.addCheckbutton(text = "Celsius", row = 1, column = 2)
