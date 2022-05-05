@@ -8,6 +8,8 @@ Class definitions contain:
 
 Class names are typically capitalized
 
+Classes should be defined in a seperate file, then imported
+
 method definitions must include a "self" parameter, even though the variable name when the method is called binds the object instance to the method
 
 Most classes include __init__ as the constructor to to initialize the object's attributes
@@ -25,3 +27,23 @@ Mutators: allow you to modify an object's state
 * Fill the class template with an __init__ method and a __str__ method
 * Complete and test the remaining methods
 * Document your code, include a docstring
+
+Operator overloading: you can "overload" the default operations by defining a new operation using the same method name
+
+Comparison methods: once the implementer of the class has defined methods for ==, <, >= the others are automatically provided
+
+Not all objects can be compared for inequality, but all objects can be compared for equality 
+
+Pickling: converting an object to text for storage
+pickle.dump: puts things in a text file
+pickle.load: puts things from a text file into a program (use *try...except*)
+
+uhhhhhhhhhh
+
+## 2-D Grids
+
+Container where you organize things by row and column
+
+import Grid
+Grid(rows = , columns = , *optional* fillValue)
+
