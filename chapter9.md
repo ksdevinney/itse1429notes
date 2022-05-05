@@ -47,3 +47,16 @@ Container where you organize things by row and column
 import Grid
 Grid(rows = , columns = , *optional* fillValue)
 
+Also, need to get good at:
+* Data encapsulation
+* Inheritance
+* Polymorphism (allowing several classes to use same method names)
+
+all classes extend "object" and inherit properties of object. 
+All new subclasses inherit instance variables and methods of ancestor classes
+
+Imperative programming: consists of input and output statements; based on having sets of commands
+
+Procedural programming: useing cooperating subprograms to solve problems
+
+Functional programming: programs as a set of cooperating functions
