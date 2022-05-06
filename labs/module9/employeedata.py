@@ -24,7 +24,6 @@ class EmployeeData(object):
 
     def giveRaise(self, percent):
         self.salary = self.salary * (1 + percent)
-        # return str(self.salary)
 
     def __str__(self):
         # returns employee data with labels
