@@ -18,4 +18,4 @@ class DistanceCalculator(object):
         self.pointDistance = math.sqrt((self.secondX - self.firstX) ** 2 + (self.secondY - self.firstY) ** 2)
 
     def __str__(self):
-        return "Point 1: (" + str(self.firstX) + ", " + str(self.firstY) + ") \nSecond point: (" + str(self.secondX) + ", " + str(self.secondY) + ")\nDistance between point 1 and point 2: " + str(self.pointDistance) 
+        return "Point 1: (%0.2f, %0.2f)\nPoint 2: (%0.2f, %0.2f)\nDistance between point 1 and point 1: %0.2f" % (self.firstX, self.firstY, self.secondX, self.secondY, self.pointDistance)

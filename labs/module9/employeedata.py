@@ -11,20 +11,20 @@ class EmployeeData(object):
         self.exp = exp
 
     def getName(self):
-        return "Name: " + self.name
+        return "Name: %s" % self.name
 
     def getTitle(self):
-        return "Title: " + self.title
+        return "Title: %s" % self.title
     
     def getSalary(self):
-        return "Salary: " + str(self.salary)
+        return "Salary: %0.2f" % self.salary
 
     def getExpYears(self):
-        return "Years of Experience: " + str(self.exp)
+        return "Years of Experience: %d" % self.exp
 
     def giveRaise(self, percent):
         self.salary = self.salary * (1 + percent)
 
     def __str__(self):
         # returns employee data with labels
-        return "Name: " + self.name + "\nTitle: " + self.title + "\nSalary: " + str(self.salary) + "\nYears of Experience: " + str(self.exp)
+        return "Name: %s\nTitle: %s\nSalary: %0.2f\nYears of Experience: %d" % (self.name, self.title, self.salary, self.exp)
