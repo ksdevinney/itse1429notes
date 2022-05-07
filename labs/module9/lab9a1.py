@@ -12,6 +12,7 @@ def main():
 
     point1 = DistanceCalculator(x1, y1, x2, y2)
 
+    # call distance method
     point1.getDistance()
 
     print(point1.__str__())
