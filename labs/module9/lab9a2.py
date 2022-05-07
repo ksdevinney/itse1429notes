@@ -1,5 +1,5 @@
 # Lab 9A2
-# Kaite Devinney
+# Katie Devinney
 # Uses the employeedata class to track employee data
 
 from employeedata import EmployeeData
